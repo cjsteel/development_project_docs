@@ -1,12 +1,11 @@
+# creating ansible projects.md
 
+## Ansible development system setup
 
+### Requirements
 
+#### Ansible environment
 
-# file: creating new projects.md
-
-## Development system setup
-
-### Ansible
 * miniconda
 * ansible conda environment(s)
 ### git stuff
@@ -22,7 +21,7 @@ Example directory structure
 ```
 ### dir variables
 ```shell
-project_root="$HOME/projects"
+project_root="$HOME/projects/ansel"
 project_type=tests                  # ansible
 project_sub_type=ws                 # role
 project_name=automa                 # freesurfer
@@ -31,8 +30,14 @@ project_name=automa                 # freesurfer
 ```shell
 mkdir -p $project_root/$project_type/$project_sub_type/$project_name
 echo $project_root/$project_type/$project_sub_type/$project_name
-cd $project_root/$project_type/$project_sub_type/$project_name
 ```
+
+### clone this document
+
+```shell
+cd $project_root
+git clone git@github.com:cjsteel/development_project_docs.git
+
 ## adding project parts
 
 ### Criteria
@@ -42,11 +47,6 @@ Each project and each project sponsor will have different needs So you want to c
 * We want to keep some information private
 * We want to publish what we can
 * that some parts can be reused for other types of projects, what to keep private 
-### ansible-development-docs
-```shell
-cd $project_root/$project_type
-git clone git@github.com:cjsteel/ansible-development-docs.git
-```
 
 ### Add project templates
 
